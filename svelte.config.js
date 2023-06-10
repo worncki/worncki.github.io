@@ -4,7 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 
-		dapter: adapter(),
+		adapter: adapter(),
 
                 paths: {
                     base: process.env.NODE_ENV === 'production' ? '/worncki.github.io' : '',
