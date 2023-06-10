@@ -6,12 +6,14 @@
 
     addMessages('en', en);
     addMessages('de', de);
+    locale.set('en');
 
     let languages = [
         {id: 1, text:"de"},
         {id: 2, text:"en"}
     ];
-    let selected;
+    let selected = languages[1];
+    
 
     function changed() {
         locale.set(selected.text);
